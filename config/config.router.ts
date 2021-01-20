@@ -1,13 +1,13 @@
 export default [
   { 
-    path: '/login', 
+    path: '/login',
+    exact: true,
     title: '登录',
     component: '@/pages/login/login',
   },
 
-  { 
-    path: '/', 
-    exact: true,
+  {
+    path: '/',
     component: '@/layouts/index',
     routes: [
       {path:'/', redirect: '/login'},
@@ -26,9 +26,10 @@ export default [
         ],
         component: '@/pages/user/user',
       },
+
+      {
+        component: '@/pages/404',
+      }
     ]
   },
-  {
-    component:'@/pages/404',
-  }
 ]
