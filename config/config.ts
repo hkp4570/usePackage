@@ -42,7 +42,7 @@ export default defineConfig({
   define:{ // 代码可用变量
     FOO: 'bar'
   },
-  devtool: "eval", // sourcemap类型
+  devtool: "source-map", // sourcemap类型
   dynamicImport: {}, // 按需加载
   ignoreMomentLocale: true, // 忽略 moment 的 locale 文件，用于减少尺寸。
   mountElementId:'__next',
