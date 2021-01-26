@@ -51,6 +51,11 @@ export default defineConfig({
   },
   theme:{
     '@primary-color': '#1f2233'
+  },
+  chainWebpack(config,{webpack}) {
+    webpack({
+      
+    })
   }
 });
 
