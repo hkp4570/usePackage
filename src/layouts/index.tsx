@@ -13,6 +13,7 @@ const index: React.FC<any> = (props: any) => {
     const {
         location: { pathname },
     } = props;
+
     return (
         <div>
             <div className={styles.nav}>
