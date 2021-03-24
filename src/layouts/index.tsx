@@ -41,6 +41,14 @@ const index: React.FC<any> = (props: any) => {
                 >
                     sticky
                 </NavLink>
+                <NavLink
+                    exact
+                    to="/calendar"
+                    className={styles.navItem}
+                    activeClassName={styles.navItemActive}
+                >
+                    calendar
+                </NavLink>
             </div>
             {pathname.includes('/sticky') ? (
                 <div>

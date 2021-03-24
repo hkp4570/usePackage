@@ -50,6 +50,12 @@ export default [
                 // ],
                 component: '@/pages/user/user',
             },
+            {
+                path: '/calendar',
+                title: '日历',
+                exact: true,
+                component: '@/pages/calendar/calendar',
+            },
 
             {
                 component: '@/pages/404',
