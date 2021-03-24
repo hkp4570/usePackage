@@ -9,7 +9,7 @@ const linkStyle = {
     },
 };
 // 记住通过props.children渲染子路由
-const index: React.FC<any> = (props: any) => {
+const index: React.FC<any> = (props: any): JSX.Element => {
     const {
         location: { pathname },
     } = props;
