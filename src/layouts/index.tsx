@@ -49,6 +49,14 @@ const index: React.FC<any> = (props: any): JSX.Element => {
                 >
                     calendar
                 </NavLink>
+                <NavLink
+                    exact
+                    to="/datePicker"
+                    className={styles.navItem}
+                    activeClassName={styles.navItemActive}
+                >
+                    datePicker
+                </NavLink>
             </div>
             {pathname.includes('/sticky') ? (
                 <div>

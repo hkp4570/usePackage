@@ -56,7 +56,12 @@ export default [
                 exact: true,
                 component: '@/pages/calendar/calendar',
             },
-
+            {
+                path: '/datePicker',
+                title: '时间选择器',
+                exact: true,
+                component: '@/pages/datePicker/datePicker',
+            },
             {
                 component: '@/pages/404',
             },
