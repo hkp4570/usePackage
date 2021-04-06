@@ -10,7 +10,7 @@ export default [
         path: '/',
         component: '@/layouts/index',
         routes: [
-            { path: '/', redirect: '/login' },
+            { path: '/', redirect: '/home' },
             {
                 path: '/home',
                 title: '首页',

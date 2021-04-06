@@ -10,7 +10,6 @@ import styles from './calendar.less';
  */
 const componentName: React.FC<any> = (props: any) => {
     const [value, onChange] = useState<Date | Date[]>(new Date());
-    // console.log(value);
     return (
         <div className={styles.calendar}>
             <Calendar

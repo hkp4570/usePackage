@@ -16,10 +16,10 @@ export default defineConfig({
         type: 'none',
     },
     routes: routes,
-    // layout: {
-    //   name:'Ant Design',
-    //   locale: true,
-    // },
+    layout: {
+        name: 'Ant Design',
+        locale: true,
+    },
     locale: {
         default: 'zh-CN',
         antd: false,

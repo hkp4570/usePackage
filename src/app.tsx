@@ -1,5 +1,6 @@
 import { user, userType } from '@/services/user';
 import { history } from 'umi';
+import './i18n.js';
 
 export async function getInitialState(): Promise<{
     name?: string;

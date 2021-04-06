@@ -25,7 +25,7 @@ export default class datePicker extends React.Component {
                 <DatePicker
                     theme={'ios'}
                     value={this.state.time}
-                    isOpen={true}
+                    isOpen={false}
                     // onSelect={this.handleSelect}
                     // onCancel={this.handleCancel}
                 />
