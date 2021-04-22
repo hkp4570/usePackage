@@ -18,7 +18,7 @@ export default defineConfig({
     routes: routes,
     layout: {
         name: 'Ant Design',
-        locale: true,
+        locale: false,
     },
     locale: {
         default: 'zh-CN',

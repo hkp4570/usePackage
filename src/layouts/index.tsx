@@ -16,7 +16,7 @@ const index: React.FC<any> = (props: any): JSX.Element => {
 
     return (
         <div>
-            <div className={styles.nav}>
+            {/* <div className={styles.nav}>
                 <NavLink
                     exact
                     to="/home"
@@ -70,7 +70,7 @@ const index: React.FC<any> = (props: any): JSX.Element => {
                         stacked
                     </NavLink>
                 </div>
-            ) : null}
+            ) : null} */}
             {props.children}
         </div>
     );
