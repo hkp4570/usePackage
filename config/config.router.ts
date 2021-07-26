@@ -42,6 +42,11 @@ const router: IBestAFSRoute[] = [
         name: '函数组件redux',
         component: '@/pages/list/list',
     },
+    {
+        path: '/countDown',
+        name: '倒计时',
+        component: '@/pages/countDown/index',
+    },
 ];
 
 export default router;
@@ -56,7 +61,7 @@ export default router;
 
 //     {
 //         path: '/',
-//         // component: '@/layouts/index',
+// component: '@/layouts/index',
 //         routes: [
 //             { path: '/', redirect: '/home' },
 //             {

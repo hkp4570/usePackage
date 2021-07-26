@@ -20,11 +20,11 @@ export default defineConfig({
         name: 'Ant Design',
         locale: false,
     },
-    locale: {
-        default: 'zh-CN',
-        antd: false,
-        title: false,
-    },
+    // locale: {
+    //     default: 'zh-CN',
+    //     antd: false,
+    //     title: false,
+    // },
 
     analyze: {
         // 模块解构分析

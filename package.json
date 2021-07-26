@@ -24,7 +24,6 @@
     "@types/react-calendar": "^3.1.4",
     "@umijs/preset-react": "1.x",
     "merge-class-names": "^1.4.0",
-    "raycharts": "^0.9.0",
     "react-calendar": "^3.3.1",
     "react-mobile-datepicker": "^4.0.2",
     "react-sticky": "^6.0.3",
