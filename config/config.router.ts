@@ -47,6 +47,22 @@ const router: IBestAFSRoute[] = [
         name: '倒计时',
         component: '@/pages/countDown/index',
     },
+    {
+        path: '/rc',
+        name: 'react',
+        routes: [
+            {
+                path: '/rc/rcTree',
+                name: 'rc-tree',
+                component: '@/pages/rcTree/index',
+            },
+            {
+                path: '/rc/rcTreeSelect',
+                name: 'rc-tree-select',
+                component: '@/pages/rcTreeSelect/index',
+            },
+        ],
+    },
 ];
 
 export default router;
