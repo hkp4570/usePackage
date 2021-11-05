@@ -1,6 +1,6 @@
 import React from 'react';
 import Tree from 'rc-tree';
-import './rcTree.less';
+import styles from './rcTree.less';
 
 const treeData = [
     {
@@ -40,7 +40,12 @@ const RcTree = () => {
     const onCheck = (check) => {
         console.log(check);
     };
-    return <Tree checkable onCheck={onCheck} treeData={treeData} />;
+    return (
+        <div className={styles.rcTree}>
+            <h1 className={styles.title}>rc-tree</h1>
+            <Tree checkable onCheck={onCheck} treeData={treeData} />
+        </div>
+    );
 };
 
 export default RcTree;
