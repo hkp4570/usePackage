@@ -63,6 +63,11 @@ const router: IBestAFSRoute[] = [
             },
         ],
     },
+    {
+        path: '/g6',
+        name: 'g6',
+        component: '@/pages/g6/index',
+    },
 ];
 
 export default router;
