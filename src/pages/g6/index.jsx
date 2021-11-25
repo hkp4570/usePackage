@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import G6 from '@antv/g6';
 //codesandbox.io/s/beautiful-driscoll-j1gom?file=/index.js
 
-https: const data = {
+const data = {
     nodes: [
         {
             status: 0, //节点状态 用于更改颜色

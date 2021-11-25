@@ -68,6 +68,11 @@ const router: IBestAFSRoute[] = [
         name: 'g6',
         component: '@/pages/g6/index',
     },
+    {
+        path: '/gg-editor',
+        name: 'gg-editor',
+        component: '@/pages/gg-editor/index',
+    },
 ];
 
 export default router;

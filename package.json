@@ -24,6 +24,7 @@
     "@antv/g6": "4.4.1",
     "@types/react-calendar": "^3.1.4",
     "@umijs/preset-react": "1.x",
+    "gg-editor": "^3.1.3",
     "merge-class-names": "^1.4.0",
     "rc-tree": "^5.2.2",
     "rc-tree-select": "^4.6.1",
