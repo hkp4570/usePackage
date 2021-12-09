@@ -1,0 +1,29 @@
+.tooltip {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    .toolTip_wrapper {
+    }
+}
+.tooltip_content {
+    position: absolute;
+    background: chocolate;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &:after {
+        display: block;
+        content: '';
+        width: 0;
+        height: 0;
+        border: 5px solid #ccc;
+        border-top-color: #ccc;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
