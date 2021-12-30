@@ -66,7 +66,18 @@ const router: IBestAFSRoute[] = [
     {
         path: '/g6',
         name: 'g6',
-        component: '@/pages/g6/index',
+        routes: [
+            {
+                path: '/g6/basic',
+                name: 'g6-basic',
+                component: '@/pages/g6/index',
+            },
+            {
+                path: '/g6/reactNode',
+                name: 'g6-reactNode',
+                component: '@/pages/g6/reactNode',
+            },
+        ],
     },
     {
         path: '/gg-editor',

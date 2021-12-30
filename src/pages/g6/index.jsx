@@ -74,8 +74,10 @@ const data = {
             label: '启动',
             type: 'circle',
             size: [72, 72],
-            x: 457.015625,
-            y: 117.5,
+            // x: 457.015625,
+            // y: 117.5,
+            x: 36,
+            y: 36,
             style: {
                 fill: '#FEF7E7',
             },
@@ -313,24 +315,37 @@ const data = {
 
 const Index = () => {
     const ref = React.useRef(null);
-    let graph = null;
+    let graph = React.useRef(null);
     useEffect(() => {
-        if (!graph) {
-            graph = new G6.Graph({
+        if (!graph.current) {
+            graph.current = new G6.Graph({
                 container: ReactDOM.findDOMNode(ref.current),
-                width: 800,
-                height: 1000,
-                defaultNode: {
-                    shape: 'circle',
-                    size: [80],
+                width: ref.current.scrollWidth || 500,
+                height: ref.current.scrollHeight || 500,
+                // defaultNode,
+                modes: {
+                    default: ['zoom-canvas'],
                 },
             });
         }
-        graph.data(data);
-        graph.render();
+        graph.current.data(data);
+        graph.current.render();
+        graph.current.on('node:click', function (evt) {
+            console.log(evt);
+        });
     }, []);
-
-    return <div ref={ref} />;
+    return (
+        <div
+            style={{
+                position: 'absolute',
+                left: '100px',
+                top: '100px',
+                transform: 'scale(1.2)',
+            }}
+        >
+            <div ref={ref} style={{ border: '1px solid' }} />
+        </div>
+    );
 };
 
 export default Index;
