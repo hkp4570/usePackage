@@ -320,30 +320,33 @@ const Index = () => {
         if (!graph.current) {
             graph.current = new G6.Graph({
                 container: ReactDOM.findDOMNode(ref.current),
-                width: ref.current.scrollWidth || 500,
-                height: ref.current.scrollHeight || 500,
+                width: 800 * 1.2,
+                height: 800 * 1.2,
                 // defaultNode,
-                modes: {
-                    default: ['zoom-canvas'],
-                },
+                // modes: {
+                //     default: ['zoom-canvas'],
+                // },
             });
         }
         graph.current.data(data);
         graph.current.render();
+        graph.current.zoom(1.2);
         graph.current.on('node:click', function (evt) {
             console.log(evt);
         });
     }, []);
     return (
-        <div
-            style={{
-                position: 'absolute',
-                left: '100px',
-                top: '100px',
-                transform: 'scale(1.2)',
-            }}
-        >
-            <div ref={ref} style={{ border: '1px solid' }} />
+        <div style={{ transform: 'scale(1.2)' }}>
+            <div
+                style={{
+                    position: 'absolute',
+                    left: '100px',
+                    top: '100px',
+                    transform: 'scale(0.833)',
+                }}
+            >
+                <div ref={ref} style={{ border: '1px solid' }} />
+            </div>
         </div>
     );
 };
