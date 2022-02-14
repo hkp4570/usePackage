@@ -73,6 +73,11 @@ const router: IBestAFSRoute[] = [
                 component: '@/pages/g6/index',
             },
             {
+                path: '/g6/transform',
+                name: 'g6-transform',
+                component: '@/pages/g6/transformg6',
+            },
+            {
                 path: '/g6/reactNode',
                 name: 'g6-reactNode',
                 component: '@/pages/g6/reactNode',
