@@ -89,6 +89,11 @@ const router: IBestAFSRoute[] = [
         name: 'gg-editor',
         component: '@/pages/gg-editor/index',
     },
+    {
+        path: '/r-draggable',
+        name: 'r-draggable',
+        component: '@/pages/draggable/index',
+    },
 ];
 
 export default router;
