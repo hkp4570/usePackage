@@ -55,5 +55,11 @@ export default defineConfig({
     theme: {
         '@primary-color': '#1f2233',
     },
+    proxy: {
+        '/mc/': {
+            target: 'http://10.10.10.87:9527',
+            changeOrigin: true,
+        },
+    },
     chainWebpack(config, { webpack }) {},
 });

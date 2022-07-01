@@ -1,3 +1,4 @@
+import { request } from 'umi';
 export default {
     async test() {
         return new Promise((resolve) => {
@@ -7,3 +8,9 @@ export default {
         });
     },
 };
+
+export async function getMachineCode({ time }: { time: number }) {
+    return request(`/mc/code/machineCode?time=${time}`, {
+        method: 'get',
+    });
+}
