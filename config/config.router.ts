@@ -80,7 +80,7 @@ const router: IBestAFSRoute[] = [
             {
                 path: '/g6/reactNode',
                 name: 'g6-reactNode',
-                component: '@/pages/g6/reactNode',
+                component: '@/pages/g6/ReactNode',
             },
         ],
     },
