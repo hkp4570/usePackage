@@ -94,6 +94,11 @@ const router: IBestAFSRoute[] = [
         name: 'r-draggable',
         component: '@/pages/draggable/index',
     },
+    {
+        path: '/strategy',
+        name: 'strategy',
+        component: '@/pages/strategy/index',
+    },
 ];
 
 export default router;
