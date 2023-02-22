@@ -33,6 +33,7 @@
     "react-draggable": "^4.4.4",
     "react-mobile-datepicker": "^4.0.2",
     "react-sticky": "^6.0.3",
+    "react-use": "^17.4.0",
     "umi": "^3.3.6"
   },
   "devDependencies": {

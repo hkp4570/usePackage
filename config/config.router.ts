@@ -99,6 +99,11 @@ const router: IBestAFSRoute[] = [
         name: 'strategy',
         component: '@/pages/strategy/index',
     },
+    {
+        path: '/react-use',
+        name: 'react-use',
+        component: '@/pages/react-use/index',
+    },
 ];
 
 export default router;
